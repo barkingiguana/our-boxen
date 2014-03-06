@@ -41,4 +41,9 @@ class people::craigw {
     command => '/usr/bin/defaults write com.apple.Terminal "Default Window Settings" -string "Homebrew"',
     unless => '/usr/bin/defaults read com.apple.Terminal "Default Window Settings" |/usr/bin/grep Homebrew'
   }
+
+  exec { 'set Terminal exit action':
+    command => '/usr/libexec/PlistBuddy -c "Set \"Window Settings\":Homebrew:shellExitAction 0" ~/Library/Preferences/com.apple.Terminal.plist',
+    unless => '/usr/libexec/PlistBuddy -c "Print \"Window Settings\":Homebrew:shellExitAction" ~/Library/Preferences/com.apple.Terminal.plist |/usr/bin/grep 0'
+  }
 }
