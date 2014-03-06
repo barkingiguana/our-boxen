@@ -6,7 +6,11 @@ server {
   access_log <%= scope.lookupvar "nginx::config::logdir" %>/<%= @name %>.access.log main;
   listen 80;
   root <%= @repo_dir %>/public;
-  server_name <%= @server_name %> *.<%= @server_name %>;
+  server_name
+    <%= @server_name.gsub(/_/, '-') %>
+    *.<%= @server_name.gsub(/_/, '-') %>
+    ~^<%= @server_name.gsub(/_/, '-').gsub(/\.dev$/, '') %>\..*\.xip\.io$
+    ~^.*\.<%= @server_name.gsub(/_/, '-').gsub(/\.dev$/, '') %>\..*\.xip\.io$;
 
   client_max_body_size 50M;
   error_page 500 502 503 504 /50x.html;
