@@ -31,4 +31,14 @@ class people::craigw {
   package {
     'bash-completion':;
   }
+
+  exec { 'set Terminal startup theme':
+    command => '/usr/bin/defaults write com.apple.Terminal "Startup Window Settings" -string "Homebrew"',
+    unless => '/usr/bin/defaults read com.apple.Terminal "Startup Window Settings" |/usr/bin/grep Homebrew'
+  }
+
+  exec { 'set Terminal default theme':
+    command => '/usr/bin/defaults write com.apple.Terminal "Default Window Settings" -string "Homebrew"',
+    unless => '/usr/bin/defaults read com.apple.Terminal "Default Window Settings" |/usr/bin/grep Homebrew'
+  }
 }
