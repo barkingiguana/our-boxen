@@ -46,4 +46,6 @@ class people::craigw {
     command => '/usr/libexec/PlistBuddy -c "Set \"Window Settings\":Homebrew:shellExitAction 0" ~/Library/Preferences/com.apple.Terminal.plist',
     unless => '/usr/libexec/PlistBuddy -c "Print \"Window Settings\":Homebrew:shellExitAction" ~/Library/Preferences/com.apple.Terminal.plist |/usr/bin/grep 0'
   }
+
+  include spotify
 }
