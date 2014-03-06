@@ -57,3 +57,4 @@ github "xquartz",     "1.1.1"
 # https://github.com/boxen.
 
 github "spotify",     "1.0.1"
+github "skype",       "1.0.8"

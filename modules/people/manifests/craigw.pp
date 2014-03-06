@@ -48,4 +48,5 @@ class people::craigw {
   }
 
   include spotify
+  include skype
 }
