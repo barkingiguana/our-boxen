@@ -33,19 +33,15 @@ class people::craigw {
   }
 
   boxen::osx_defaults { 'set Terminal startup theme':
-    ensure => present,
     domain => 'com.apple.Terminal',
     key => 'Startup Window Settings',
-    type => 'string',
     value => 'Homebrew',
     user => $::boxen_user
   }
 
   boxen::osx_defaults { 'set Terminal default theme':
-    ensure => present,
     domain => 'com.apple.Terminal',
     key => 'Default Window Settings',
-    type => 'string',
     value => 'Homebrew',
     user => $::boxen_user
   }
