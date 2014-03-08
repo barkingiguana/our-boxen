@@ -32,14 +32,22 @@ class people::craigw {
     'bash-completion':;
   }
 
-  exec { 'set Terminal startup theme':
-    command => '/usr/bin/defaults write com.apple.Terminal "Startup Window Settings" -string "Homebrew"',
-    unless => '/usr/bin/defaults read com.apple.Terminal "Startup Window Settings" |/usr/bin/grep Homebrew'
+  boxen::osx_defaults { 'set Terminal startup theme':
+    ensure => present,
+    domain => 'com.apple.Terminal',
+    key => 'Startup Window Settings',
+    type => 'string',
+    value => 'Homebrew',
+    user => $::boxen_user
   }
 
-  exec { 'set Terminal default theme':
-    command => '/usr/bin/defaults write com.apple.Terminal "Default Window Settings" -string "Homebrew"',
-    unless => '/usr/bin/defaults read com.apple.Terminal "Default Window Settings" |/usr/bin/grep Homebrew'
+  boxen::osx_defaults { 'set Terminal default theme':
+    ensure => present,
+    domain => 'com.apple.Terminal',
+    key => 'Default Window Settings',
+    type => 'string',
+    value => 'Homebrew',
+    user => $::boxen_user
   }
 
   exec { 'set Terminal exit action':
