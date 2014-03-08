@@ -32,18 +32,41 @@ class people::craigw {
     'bash-completion':;
   }
 
-  boxen::osx_defaults { 'set Terminal startup theme':
-    domain => 'com.apple.Terminal',
-    key => 'Startup Window Settings',
-    value => 'Homebrew',
-    user => $::boxen_user
+  boxen::osx_defaults {
+    'set Terminal startup theme':
+      domain => 'com.apple.Terminal',
+      key    => 'Startup Window Settings',
+      value  => 'Homebrew',
+      user   => $::boxen_user;
+    'set Terminal default theme':
+      domain => 'com.apple.Terminal',
+      key    => 'Default Window Settings',
+      value  => 'Homebrew',
+      user   => $::boxen_user;
+    'autohide Dock':
+      domain => 'com.apple.dock',
+      key    => 'autohide',
+      value  => true,
+      user   => $::boxen_user,
+      notify => Exec['restart Dock'];
+    'magnify Dock':
+      domain => 'com.apple.dock',
+      key    => 'magnification',
+      value  => true,
+      user   => $::boxen_user,
+      notify => Exec['restart Dock'];
+    'set Dock normal icon size':
+      domain => 'com.apple.dock',
+      key    => 'tilesize',
+      value  => 32,
+      type   => 'integer',
+      user   => $::boxen_user,
+      notify => Exec['restart Dock'];
   }
 
-  boxen::osx_defaults { 'set Terminal default theme':
-    domain => 'com.apple.Terminal',
-    key => 'Default Window Settings',
-    value => 'Homebrew',
-    user => $::boxen_user
+  exec { 'restart Dock':
+    command     => '/usr/bin/killall Dock',
+    refreshonly => true
   }
 
   exec { 'set Terminal exit action':
