@@ -2,3 +2,4 @@
 "ruby::default_gems":
   - "bundler ~>1.5.1"
   - "flog ~>4.2.0"
+"git::global_excludesfile": "~/.gitignore-global"
