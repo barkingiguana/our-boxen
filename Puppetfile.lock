@@ -84,6 +84,16 @@ GITHUBTARBALL
     sudo (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-vagrant
+  specs:
+    vagrant (3.0.5)
+
+GITHUBTARBALL
+  remote: boxen/puppet-virtualbox
+  specs:
+    virtualbox (1.0.10)
+
+GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.1.1)
@@ -124,5 +134,7 @@ DEPENDENCIES
   spotify (= 1.0.1)
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
+  vagrant (= 3.0.5)
+  virtualbox (= 1.0.10)
   xquartz (= 1.1.1)
 

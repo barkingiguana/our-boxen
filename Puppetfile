@@ -58,3 +58,5 @@ github "xquartz",     "1.1.1"
 
 github "spotify",     "1.0.1"
 github "skype",       "1.0.8"
+github "vagrant",     "3.0.5"
+github "virtualbox",  "1.0.10"
