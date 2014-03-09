@@ -69,6 +69,11 @@ GITHUBTARBALL
     postgresql (3.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-redis
+  specs:
+    redis (2.1.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-repository
   specs:
     repository (2.3.0)
@@ -145,6 +150,7 @@ DEPENDENCIES
   phantomjs (= 2.1.0)
   pkgconfig (= 1.0.0)
   postgresql (= 3.0.0)
+  redis (= 2.1.0)
   repository (= 2.3.0)
   ruby (= 7.2.3)
   skype (= 1.0.8)

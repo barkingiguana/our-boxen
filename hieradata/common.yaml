@@ -5,3 +5,4 @@
 "git::global_excludesfile": "~/.gitignore-global"
 "mysql::config::port": 3306
 "postgresql::port": 5432
+"redis::port": '6379'
