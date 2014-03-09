@@ -1,12 +1,12 @@
 GITHUBTARBALL
+  remote: barkingiguana/puppet-boxen
+  specs:
+    boxen (3.4.3)
+
+GITHUBTARBALL
   remote: barkingiguana/puppet-git
   specs:
     git (2.0.1)
-
-GITHUBTARBALL
-  remote: boxen/puppet-boxen
-  specs:
-    boxen (3.3.8)
 
 GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
@@ -34,6 +34,11 @@ GITHUBTARBALL
     homebrew (1.6.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-mysql
+  specs:
+    mysql (1.2.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
     nginx (1.4.3)
@@ -59,6 +64,11 @@ GITHUBTARBALL
     pkgconfig (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-postgresql
+  specs:
+    postgresql (3.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-repository
   specs:
     repository (2.3.0)
@@ -82,6 +92,11 @@ GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-sysctl
+  specs:
+    sysctl (1.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
@@ -114,7 +129,7 @@ GITHUBTARBALL
     module-data (0.0.1)
 
 DEPENDENCIES
-  boxen (= 3.3.8)
+  boxen (= 3.4.3)
   dnsmasq (= 1.0.1)
   foreman (= 1.1.0)
   gcc (= 2.0.1)
@@ -123,17 +138,20 @@ DEPENDENCIES
   homebrew (= 1.6.0)
   inifile (= 1.0.1)
   module-data (= 0.0.1)
+  mysql (= 1.2.0)
   nginx (= 1.4.3)
   nodejs (= 3.5.0)
   openssl (= 1.0.0)
   phantomjs (= 2.1.0)
   pkgconfig (= 1.0.0)
+  postgresql (= 3.0.0)
   repository (= 2.3.0)
   ruby (= 7.2.3)
   skype (= 1.0.8)
   spotify (= 1.0.1)
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
+  sysctl (= 1.0.1)
   vagrant (= 3.0.5)
   virtualbox (= 1.0.10)
   xquartz (= 1.1.1)

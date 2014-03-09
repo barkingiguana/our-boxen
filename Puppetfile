@@ -29,7 +29,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "3.3.8"
+github "boxen", "3.4.3", :repo => "barkingiguana/puppet-boxen"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
@@ -60,3 +60,6 @@ github "spotify",     "1.0.1"
 github "skype",       "1.0.8"
 github "vagrant",     "3.0.5"
 github "virtualbox",  "1.0.10"
+github "mysql",       "1.2.0"
+github "postgresql",  "3.0.0"
+github "sysctl",      "1.0.1"
