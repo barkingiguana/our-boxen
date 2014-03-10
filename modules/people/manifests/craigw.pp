@@ -43,6 +43,11 @@ class people::craigw {
       key    => 'Default Window Settings',
       value  => 'Homebrew',
       user   => $::boxen_user;
+    'enable Developer tools for Safari':
+      domain => 'com.apple.Safari',
+      key    => 'IncludeDebugMenu',
+      value  => 1,
+      user   => $::boxen_user;
     'autohide Dock':
       domain => 'com.apple.dock',
       key    => 'autohide',
