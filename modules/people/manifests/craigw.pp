@@ -48,6 +48,11 @@ class people::craigw {
       key    => 'IncludeDebugMenu',
       value  => 1,
       user   => $::boxen_user;
+    'hide bookmark bar in Safari':
+      domain => 'com.apple.Safari',
+      key    => 'ShowFavoritesBar',
+      value  => false,
+      user   => $::boxen_user;
     'autohide Dock':
       domain => 'com.apple.dock',
       key    => 'autohide',
