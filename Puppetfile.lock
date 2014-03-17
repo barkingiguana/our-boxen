@@ -34,6 +34,11 @@ GITHUBTARBALL
     homebrew (1.6.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-memcached
+  specs:
+    memcached (2.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-mysql
   specs:
     mysql (1.2.0)
@@ -142,6 +147,7 @@ DEPENDENCIES
   go (= 2.0.1)
   homebrew (= 1.6.0)
   inifile (= 1.0.1)
+  memcached (= 2.0.0)
   module-data (= 0.0.1)
   mysql (= 1.2.0)
   nginx (= 1.4.3)

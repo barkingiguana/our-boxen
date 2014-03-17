@@ -6,3 +6,4 @@
 "mysql::config::port": 3306
 "postgresql::port": 5432
 "redis::port": '6379'
+"memcached::port": '11211'
