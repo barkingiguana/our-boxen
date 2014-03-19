@@ -6,6 +6,8 @@ class barkingiguana {
     $mysql     = undef,
     $memcached = undef,
     $dotenv    = undef,
+    $nodejs    = undef,
+    $phantomjs = undef,
   ) {
     boxen::project { $name:
       nginx      => $nginx,
@@ -14,6 +16,8 @@ class barkingiguana {
       mysql      => $mysql,
       memcached  => $memcached,
       dotenv     => $dotenv,
+      nodejs     => $nodejs,
+      phantomjs  => $phantomjs,
       source     => $name
     }
   }
