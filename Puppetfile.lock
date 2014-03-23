@@ -34,6 +34,11 @@ GITHUBTARBALL
     homebrew (1.6.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-imagemagick
+  specs:
+    imagemagick (1.2.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-memcached
   specs:
     memcached (2.0.0)
@@ -146,6 +151,7 @@ DEPENDENCIES
   git (= 2.0.1)
   go (= 2.0.1)
   homebrew (= 1.6.0)
+  imagemagick (= 1.2.0)
   inifile (= 1.0.1)
   memcached (= 2.0.0)
   module-data (= 0.0.1)

@@ -88,4 +88,5 @@ node default {
 
   include vagrant
   include virtualbox
+  include imagemagick
 }
