@@ -8,6 +8,7 @@ class barkingiguana {
     $dotenv    = undef,
     $nodejs    = undef,
     $phantomjs = undef,
+    $aliases   = undef,
   ) {
     boxen::project { $name:
       nginx      => $nginx,
@@ -19,6 +20,14 @@ class barkingiguana {
       nodejs     => $nodejs,
       phantomjs  => $phantomjs,
       source     => $name
+    }
+
+    if(is_array($aliases)) {
+      $host_alias = regsubst($name, '[^a-zA-Z0-9]+', '-', 'G')
+      host { "project-${host_alias}-aliases":
+	ip => '127.0.0.1',
+	host_aliases => $aliases
+      }
     }
   }
 }
