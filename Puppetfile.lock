@@ -9,6 +9,11 @@ GITHUBTARBALL
     git (2.0.1)
 
 GITHUBTARBALL
+  remote: barkingiguana/puppet-phantomjs
+  specs:
+    phantomjs (2.3.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (1.0.1)
@@ -124,11 +129,6 @@ GITHUBTARBALL
     xquartz (1.1.1)
 
 GITHUBTARBALL
-  remote: franco/puppet-phantomjs
-  specs:
-    phantomjs (2.2.0)
-
-GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
   specs:
     inifile (1.0.1)
@@ -159,7 +159,7 @@ DEPENDENCIES
   nginx (= 1.4.3)
   nodejs (= 3.6.0)
   openssl (= 1.0.0)
-  phantomjs (= 2.2.0)
+  phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
   postgresql (= 3.0.0)
   redis (= 2.1.0)

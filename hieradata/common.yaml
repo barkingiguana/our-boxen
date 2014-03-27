@@ -7,3 +7,5 @@
 "postgresql::port": 5432
 "redis::port": '6379'
 "memcached::port": '11211'
+"phantomjs::phantomenv_version": "b6d055f97bc8fee3d206ef6ce0793676035272ed"
+"phantomjs::phantomenv_repository": "antonio/phantomenv"
