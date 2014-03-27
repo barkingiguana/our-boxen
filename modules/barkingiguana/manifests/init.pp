@@ -1,14 +1,15 @@
 class barkingiguana {
   define project(
-    $nginx     = undef,
-    $ruby      = undef,
-    $redis     = undef,
-    $mysql     = undef,
-    $memcached = undef,
-    $dotenv    = undef,
-    $nodejs    = undef,
-    $phantomjs = undef,
-    $aliases   = undef,
+    $nginx      = undef,
+    $ruby       = undef,
+    $redis      = undef,
+    $mysql      = undef,
+    $memcached  = undef,
+    $dotenv     = undef,
+    $postgresql = undef,
+    $nodejs     = undef,
+    $phantomjs  = undef,
+    $aliases    = undef,
   ) {
     boxen::project { $name:
       nginx      => $nginx,
@@ -17,6 +18,7 @@ class barkingiguana {
       mysql      => $mysql,
       memcached  => $memcached,
       dotenv     => $dotenv,
+      postgresql => $postgresql,
       nodejs     => $nodejs,
       phantomjs  => $phantomjs,
       source     => $name
