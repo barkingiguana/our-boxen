@@ -9,11 +9,6 @@ GITHUBTARBALL
     git (2.0.1)
 
 GITHUBTARBALL
-  remote: barkingiguana/puppet-phantomjs
-  specs:
-    phantomjs (2.3.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (1.0.1)
@@ -67,6 +62,11 @@ GITHUBTARBALL
   remote: boxen/puppet-openssl
   specs:
     openssl (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-phantomjs
+  specs:
+    phantomjs (2.3.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-pkgconfig
