@@ -4,11 +4,6 @@ GITHUBTARBALL
     boxen (3.4.3)
 
 GITHUBTARBALL
-  remote: barkingiguana/puppet-git
-  specs:
-    git (2.0.1)
-
-GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (1.0.1)
@@ -22,6 +17,11 @@ GITHUBTARBALL
   remote: boxen/puppet-gcc
   specs:
     gcc (2.0.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-git
+  specs:
+    git (2.2.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-go
@@ -148,7 +148,7 @@ DEPENDENCIES
   dnsmasq (= 1.0.1)
   foreman (= 1.1.0)
   gcc (= 2.0.1)
-  git (= 2.0.1)
+  git (= 2.2.2)
   go (= 2.0.1)
   homebrew (= 1.6.0)
   imagemagick (= 1.2.0)
