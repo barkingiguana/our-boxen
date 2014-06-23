@@ -14,6 +14,11 @@ GITHUBTARBALL
     dnsmasq (1.0.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-elasticsearch
+  specs:
+    elasticsearch (2.3.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-foreman
   specs:
     foreman (1.2.0)
@@ -52,6 +57,11 @@ GITHUBTARBALL
   remote: boxen/puppet-imagemagick
   specs:
     imagemagick (1.2.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-java
+  specs:
+    java (1.5.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-jmeter
@@ -111,7 +121,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (7.3.0)
+    ruby (8.1.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-skype
@@ -166,6 +176,7 @@ GITHUBTARBALL
 DEPENDENCIES
   boxen (= 3.4.3)
   dnsmasq (= 1.0.1)
+  elasticsearch (= 2.3.0)
   foreman (= 1.2.0)
   gcc (= 2.0.100)
   git (= 2.3.1)
@@ -175,6 +186,7 @@ DEPENDENCIES
   icu4c (= 1.0.1)
   imagemagick (= 1.2.0)
   inifile (= 1.0.3)
+  java (= 1.5.0)
   jmeter (= 0.1.3)
   memcached (= 2.0.0)
   module-data (= 0.0.3)
@@ -188,7 +200,7 @@ DEPENDENCIES
   r (= 0.0.1)
   redis (= 2.1.0)
   repository (= 2.3.0)
-  ruby (= 7.3.0)
+  ruby (= 8.1.1)
   skype (= 1.0.8)
   spotify (= 1.0.1)
   stdlib (= 4.1.0)
