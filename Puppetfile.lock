@@ -11,7 +11,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: barkingiguana/puppet-signing-party
   specs:
-    signing-party (0.0.8)
+    signing-party (0.0.10)
 
 GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
@@ -223,7 +223,7 @@ DEPENDENCIES
   redis (= 2.1.0)
   repository (= 2.3.0)
   ruby (= 8.1.1)
-  signing-party (= 0.0.8)
+  signing-party (= 0.0.10)
   skype (= 1.0.8)
   spotify (= 1.0.1)
   stdlib (= 4.1.0)

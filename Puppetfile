@@ -78,4 +78,4 @@ github "elasticsearch", "2.3.0"
 github "maven",       "1.0.7", :repo => "steinim/puppet-maven"
 github "wget",        "1.0.1"
 github 'gpg',         '0.0.4', :repo => 'steinim/puppet-gpg'
-github 'signing-party', '0.0.8', :repo => 'barkingiguana/puppet-signing-party'
+github 'signing-party', '0.0.10', :repo => 'barkingiguana/puppet-signing-party'
