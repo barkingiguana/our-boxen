@@ -29,7 +29,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "3.4.3", :repo => "barkingiguana/puppet-boxen"
+github "boxen", "3.6.2", :repo => "barkingiguana/puppet-boxen"
 
 # Support for default hiera data in modules
 
@@ -75,3 +75,7 @@ github "jmeter",      "0.1.3"
 github "icu4c",       "1.0.1"
 github "r",           "0.0.1", :repo => "barkingiguana/puppet-r"
 github "elasticsearch", "2.3.0"
+github "maven",       "1.0.7", :repo => "steinim/puppet-maven"
+github "wget",        "1.0.1"
+github 'gpg',         '0.0.4', :repo => 'steinim/puppet-gpg'
+github 'signing-party', '0.0.8', :repo => 'barkingiguana/puppet-signing-party'

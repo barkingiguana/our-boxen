@@ -1,4 +1,3 @@
-require boxen::environment
 require homebrew
 require gcc
 
@@ -87,4 +86,13 @@ node default {
   include virtualbox
   include imagemagick
   include jmeter
+  package { 'git-flow':
+    ensure => installed
+  }
+  include maven
+  include wget
+  include projects::all
+  include gpg
+
+  include signing-party
 }

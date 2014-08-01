@@ -1,12 +1,17 @@
 GITHUBTARBALL
   remote: barkingiguana/puppet-boxen
   specs:
-    boxen (3.4.3)
+    boxen (3.6.2)
 
 GITHUBTARBALL
   remote: barkingiguana/puppet-r
   specs:
     r (0.0.1)
+
+GITHUBTARBALL
+  remote: barkingiguana/puppet-signing-party
+  specs:
+    signing-party (0.0.8)
 
 GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
@@ -154,6 +159,11 @@ GITHUBTARBALL
     virtualbox (1.0.10)
 
 GITHUBTARBALL
+  remote: boxen/puppet-wget
+  specs:
+    wget (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.1.1)
@@ -173,14 +183,25 @@ GITHUBTARBALL
   specs:
     module-data (0.0.3)
 
+GITHUBTARBALL
+  remote: steinim/puppet-gpg
+  specs:
+    gpg (0.0.4)
+
+GITHUBTARBALL
+  remote: steinim/puppet-maven
+  specs:
+    maven (1.0.7)
+
 DEPENDENCIES
-  boxen (= 3.4.3)
+  boxen (= 3.6.2)
   dnsmasq (= 1.0.1)
   elasticsearch (= 2.3.0)
   foreman (= 1.2.0)
   gcc (= 2.0.100)
   git (= 2.3.1)
   go (= 2.0.1)
+  gpg (= 0.0.4)
   homebrew (= 1.9.2)
   hub (= 1.3.0)
   icu4c (= 1.0.1)
@@ -188,6 +209,7 @@ DEPENDENCIES
   inifile (= 1.0.3)
   java (= 1.5.0)
   jmeter (= 0.1.3)
+  maven (= 1.0.7)
   memcached (= 2.0.0)
   module-data (= 0.0.3)
   mysql (= 1.2.0)
@@ -201,6 +223,7 @@ DEPENDENCIES
   redis (= 2.1.0)
   repository (= 2.3.0)
   ruby (= 8.1.1)
+  signing-party (= 0.0.8)
   skype (= 1.0.8)
   spotify (= 1.0.1)
   stdlib (= 4.1.0)
@@ -208,5 +231,6 @@ DEPENDENCIES
   sysctl (= 1.0.1)
   vagrant (= 3.0.5)
   virtualbox (= 1.0.10)
+  wget (= 1.0.1)
   xquartz (= 1.1.1)
 
